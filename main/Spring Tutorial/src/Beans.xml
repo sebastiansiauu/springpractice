@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 
+	<bean id="helloWorld" class="com.xtremax.HelloWorld" init-method="init" destroy-method="destroy">
+		<property name="message" value="Hello World!zzzzzzzzzzzzzz" />
+	</bean>
+	 -->
+	
+	<bean id="developer" class="com.xtremax.Developer">
+		<constructor-arg name="name" value="Steve" />
+		<constructor-arg name="age" value="18" />
+		<constructor-arg name="salary" value="1000" />
+	</bean>
+	
+	<bean id="developer1" class="com.xtremax.Developer">
+		<constructor-arg name="name" value="Wonder" />
+		<constructor-arg name="age" value="20" />
+		<constructor-arg name="salary" value="2000" />
+	</bean>
+	
+	<bean id="developer2" class="com.xtremax.Developer">
+		<constructor-arg name="name" value="Vai" />
+		<constructor-arg name="age" value="30" />
+		<constructor-arg name="salary" value="3000" />
+	</bean>
+	
+	<!--  
+	<bean id="developer" class="com.xtremax.Developer">
+		<property name="name" value="Steve" />
+		<property name="age" value="18" />
+		<property name="salary" value="1000" />
+	</bean>
+	-->
+
+</beans>
